@@ -16,13 +16,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const removeBtn = document.createElement('button');
         removeBtn.textContent = 'Remove';
-        removeBtn.className = 'remove-btn';
+        removeBtn.classList.add('remove-btn'); 
         removeBtn.onclick = function() {
             taskList.removeChild(taskItem);
         };
 
         taskItem.appendChild(removeBtn);
         taskList.appendChild(taskItem);
+        
         taskInput.value = '';
     }
 
